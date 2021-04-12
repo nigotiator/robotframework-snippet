@@ -1,0 +1,74 @@
+{
+	"Newsuite": {
+		"prefix": "robot-newsuite",
+		"body": [
+			"*** Settings ***",			
+			"Resource            ${1:./path/to/resource}",
+			"Variables           ${2:./path/to/resource}",
+			"Force Tags          ${3:FORCEDTAG}",
+			"Suite Setup         ${4:Run KW on suite startup}",
+			"Test Setup          ${5:Run KW before every test}",
+			"Test Teardown       ${6:Run KW after every test}",
+			"Suite Teardown      ${7:Run KW after suite}",
+			"Documentation       ${8:#TODO Scope for this suite is..}",
+			"\n\n*** Variables ***",
+			"\n\n*** Test Cases ***",
+			"\n\n*** Keywords ***"
+			],
+		"description": "Suite template for Robot framework"
+	
+	},
+
+	"Newkw": {
+		"prefix": "robot-newkw",
+		"body": [
+			"${1:Name for the Keyword}",
+			"    [Arguments]    ${2:\\${arg1\\}}    ${3:\\${arg2\\}}",
+			"    [Documentation]    ${4:#TODO }",
+			"    ...    | *Arguments:* |",
+			"    ...    | | |",
+			"    ...    | *Uses:* |",
+			"    ...    | | |",
+			"    ...    | *Sets:* |",
+			"    ...    | | |",
+			"    ...    | *Returns:* |",
+			"    ...    | | |",
+			"",
+			"    steps...",
+			"",
+			"    [return]    ${5:\\${str1\\}}"
+			],
+		"description": "Keyword template for Robot framework"
+	},
+
+	"Newtc": {
+		"prefix": "robot-newtc",
+		"body": [
+			"${0:Name for the TC}",
+			"    [Documentation]    ${1:#TODO}",
+			"    [Tags]   ${2:WIP}",
+			"",
+			"    steps...",
+			""
+			],
+		"description": "Test case template for Robot framework"
+	},
+	"docum": {
+		"prefix": "robot-docum",
+		"body": [
+
+			"[Documentation]    ${1:#TODO}",
+			"...    | *Arguments:* |",
+			"...    | | |",
+			"...    | *Uses:* |",
+			"...    | | |",
+			"...    | *Sets:* |",
+			"...    | | |",
+			"...    | *Returns:* |",
+			"...    | | |",
+			""
+			],
+		"description": "Keyword documentation template for Robot framework"
+	}
+}
+
